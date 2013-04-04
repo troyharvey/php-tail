@@ -1,6 +1,6 @@
 <?php
 
-namespace Tail;
+namespace Desipa;
 
 class Tail
 {
