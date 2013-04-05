@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Library for polling text files for changes.",
     "keywords": ["file", "changes", "polling"],
-    "homepage": "http://github.com/desipa/tail/",
+    "homepage": "http://github.com/desipa/php-tail/",
     "license": "MIT",
     "authors": [
         {
