@@ -1,9 +1,9 @@
 {
-    "name": "cuin/tail",
+    "name": "blamh/tail",
     "type": "library",
     "description": "Library for polling text files for changes.",
     "keywords": ["file", "changes", "polling"],
-    "homepage": "http://github.com/cuin/php-tail/",
+    "homepage": "http://github.com/blamh/php-tail/",
     "license": "MIT",
     "authors": [
         {
