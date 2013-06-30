@@ -1,9 +1,9 @@
 {
-    "name": "desipa/tail",
+    "name": "cuin/tail",
     "type": "library",
     "description": "Library for polling text files for changes.",
     "keywords": ["file", "changes", "polling"],
-    "homepage": "http://github.com/desipa/php-tail/",
+    "homepage": "http://github.com/cuin/php-tail/",
     "license": "MIT",
     "authors": [
         {
