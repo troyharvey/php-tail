@@ -32,7 +32,7 @@ class Tail
             $start_time = microtime(true);
             foreach ($this->file_list as $filename) {
 
-				clearstatcache();
+		clearstatcache();
                 $filesize = filesize($filename);
 
                 // If the filename is unknown, we save the present offset.
