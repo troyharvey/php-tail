@@ -7,34 +7,39 @@ It's simply a library for polling text files for changes. Like good old tail. Th
 
 Initial part:
 
-    $tail = new \Desipa\Tail(__DIR__ . '/save.json');
-    $tail
-        ->addFile('file1.txt')
-        ->addFile('file2.txt')
-        ->addFile('file3.txt')
-    ;
+```php
+$tail = new \Desipa\Tail(__DIR__ . '/save.json');
+$tail
+    ->addFile('file1.txt')
+    ->addFile('file2.txt')
+    ->addFile('file3.txt')
+;
+```
 
 Example on how to tail for each line:
 
-    $tail->listenForLines(function($filename, $line) {
-        print "$filename - $line\n";
-    });
+```php
+$tail->listenForLines(function($filename, $line) {
+    print "$filename - $line\n";
+});
+```
 
 Example on how to tail for each update:
 
-    $tail->listen(function($filename, $chunk) {
+```php
+$tail->listen(function($filename, $chunk) {
 
-        foreach (explode("\n", $chunk) as $text) {
-            $text = trim($text);
-            if (empty($text)) {
-                continue;
-            }
-
-            print "$filename - $text\n";
+    foreach (explode("\n", $chunk) as $text) {
+        $text = trim($text);
+        if (empty($text)) {
+            continue;
         }
 
-    });
+        print "$filename - $text\n";
+    }
 
+});
+```
 
 ##TODO:
 * Write comments and doc-blocks for the code.
