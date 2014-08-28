@@ -5,6 +5,12 @@ It's simply a library for polling text files for changes. Like good old tail. Th
 
 ##How to use
 
+Installation:
+
+```sh
+$ composer require desipa/tail:dev-master
+```
+
 Initial part:
 
 ```php
